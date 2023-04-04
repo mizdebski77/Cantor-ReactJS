@@ -11,7 +11,7 @@ export const useRatesFromApi = () => {
         const fetchRates = async () => {
             try {
                 const response = await axios.get("https://api.exchangerate.host/latest");
-                const {rates, date} = await response.data
+                const { rates, date } = await response.data
                 setApirates({
                     date,
                     rates,

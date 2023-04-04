@@ -26,7 +26,4 @@ html {
     padding-top:100px ;
     } 
 }
-
-
-
 `;

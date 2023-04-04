@@ -16,6 +16,9 @@ export const Form = () => {
 
     const result = (amount / targetRate) * currentRate;
 
+    console.log(getRates);
+
+
 
     return (
         <>
