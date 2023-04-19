@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     display: grid;
-    border-bottom: solid ${({theme}) => theme.color.nevada};
-`;  
+    border-bottom: solid ${({ theme }) => theme.color.nevada};
+`;
 
 export const HeaderTitle = styled.h1`
     text-align: center;
@@ -11,4 +11,8 @@ export const HeaderTitle = styled.h1`
     padding-top: 0;
     font-weight: normal;
     margin: 0;
+
+    @media (max-width:${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 20px;
+    }
 `;

@@ -13,6 +13,10 @@ export const Wrapper = styled.form`
 export const Title = styled.div`
     font-size: 20px;
     padding: 20px;
+
+    @media (max-width:${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 16px;
+    }
     
 `;
 
@@ -20,6 +24,9 @@ export const CurrencyTitle = styled.div`
     padding: 20px 0 0 0;
     font-size: 20px;
     
+    @media (max-width:${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 16px;
+    }
 `;
 
 
@@ -27,7 +34,7 @@ export const Input = styled.div`
     padding: 20px;
     padding-top: 0;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}){
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: flex;
         flex-direction: column;
     }
@@ -39,6 +46,7 @@ export const Value = styled.input`
     font-size: 20px;
     font-weight: 600;
     width: 100%;
+
 `;
 
 export const Select = styled.select`
@@ -50,6 +58,11 @@ export const Select = styled.select`
     color: white;
     padding: 10px;
     background: transparent;
+
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 12px;
+    }
 `;
 
 export const Option = styled.option`
@@ -62,8 +75,7 @@ export const Options = styled.div`
     grid-gap: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+
         grid-gap: 10px;
     }
 
@@ -91,6 +103,10 @@ export const Wrappa = styled.div`
     text-align: center;
     color: ${({ theme }) => theme.color.silver};
     font-size: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 16px;
+}
 `;
 
 export const DateInformation = styled.p`
