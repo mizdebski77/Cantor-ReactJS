@@ -14,12 +14,7 @@ export const Form = () => {
     const targetRate = getRates.rates?.[targetCurrency];
     const status = getRates.state;
 
-    const result = (amount / targetRate) * currentRate;
-
-    console.log(getRates);
-
-
-
+    const result = (amount * targetRate) / currentRate;
     return (
         <>
             {status === "loading" ? (
